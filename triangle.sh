@@ -23,14 +23,14 @@ fi
 if [ $x -eq $y -a $y -eq $z ]
 then 
 echo "Equilateral Triangle"
-elif [ $x -eq $y -o $y -eq $z -o $z -eq $z ]
+elif [ $x -eq $y -o $y -eq $z -o $z -eq $x ]
 then
 echo "Isosceles Triangle"
 else
 x2=`expr $x \* $x`
 y2=`expr $y \* $y`
 z2=`expr $z \* $z`
-if [ `expr $x2 + $y2` -eq $x2 ]
+if [ `expr $x2 + $y2` -eq $z2 ]
 then
 echo "Right Triangle"
 else
