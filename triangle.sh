@@ -18,12 +18,12 @@ then
 echo "$x $y & $z are not a sides of Triangle"
 exit 2
 else
-echo " They are sides of a Triangle"
+echo "They are sides of a Triangle"
 fi
 if [ $x -eq $y -a $y -eq $z ]
 then 
 echo "Equilateral Triangle"
-elif [ $x -eq $y -o $y -eq $z -o $z -eq $x ]
+elif [ $x -eq $y -o $y -eq $z -o $z -eq $z ]
 then
 echo "Isosceles Triangle"
 else
